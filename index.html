@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIBK - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: white;
+    }
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #151528;
+      position: fixed;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 15px;
+    }
+    .sidebar a:hover {
+      background-color: #343a40;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #2b2d42;
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 250px;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h4 class="text-center mt-3">SIBK</h4>
+    <p class="text-center small">SISTEM INFORMASI BIMBINGAN KONSELING</p>
+    <a href="#" class="btn btn-success w-80 mb-4">➕ Kasus Baru</a>
+    <a href="#" class="nav-link"><i class="bi bi-house-door"></i> Dashboard</a>
+
+    <a class="nav-link" data-bs-toggle="collapse" href="#dataMaster"><i class="bi bi-box"></i> Data Master</a>
+    <div class="collapse" id="dataMaster">
+      <a href="#" class="nav-link ms-4">Guru</a>
+      <a href="#" class="nav-link ms-4" href="data-siswa.php" class="nav-link"></i>Siswa</a>
+      <a href="#" class="nav-link ms-4">Skor Positif</a>
+    </div>
+
+    <a class="nav-link" data-bs-toggle="collapse" href="#kelas"><i class="bi bi-person"></i> Kelas</a>
+    <div class="collapse" id="kelas">
+      <a href="#" class="nav-link ms-4">Kelas 1</a>
+      <a href="#" class="nav-link ms-4">Kelas 2</a>
+      <a href="#" class="nav-link ms-4">Kelas 3</a>
+    </div>
+
+    <a class="nav-link" data-bs-toggle="collapse" href="#pelanggaran"><i class="bi bi-x-circle"></i> Pelanggaran</a>
+    <div class="collapse" id="pelanggaran">
+      <a href="#" class="nav-link ms-4">Skor Negatif</a>
+      <a href="#" class="nav-link ms-4">Pelanggaran Berat</a>
+    </div>
+
+    <a class="nav-link" data-bs-toggle="collapse" href="#sanksi"><i class="bi bi-shield-exclamation"></i> Sanksi</a>
+    <div class="collapse" id="sanksi">
+      <a href="#" class="nav-link ms-4">Ringan</a>
+    </div>
+
+    <footer>
+      Copyright © 2025. SIBK by ALFINA DAMAYANTI
+    </footer>
+  </div>
+
+  <div class="content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+      <div class="container-fluid">
+        <input class="form-control me-2 w-50" type="search" placeholder="Search anything...">
+        <div class="d-flex align-items-center">
+          <i class="bi bi-bell me-3"></i>
+          <i class="bi bi-gear me-3"></i>
+          <img src="assets/demo/users/pinot.JPG" class="rounded-circle" alt="Foto Alfina" width="40" height="40">
+        </div>
+      </div>
+    </nav>
+
+    <h3>Dashboard</h3>
+    <p>SELAMAT DATANG DI SISTEM INFORMASI BIMBINGAN KONSELING</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-white mb-3">
+          <div class="card-body">
+            <h5>Total Siswa</h5>
+            <h2>120
+</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white mb-3">
+          <div class="card-body">
+            <h5>Total Guru</h5>
+            <h2> 30
+</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white mb-3">
+          <div class="card-body">
+            <h5>Pelanggaran</h5>
+            <h2>34</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
